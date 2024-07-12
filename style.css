@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -19,13 +20,14 @@ body {
 nav {
     background-color: skyblue;
     padding: 1rem;
+    
 }
 
 nav ul {
 
     margin: 0;
     padding: 0;
-    text-align: right;
+    display: flex;
 
 }
 
@@ -69,13 +71,20 @@ img.image1 {
 .skills {
     background-color: rgb(172, 203, 16);
 
-
 }
 
-.skills .image-container {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #c02460;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  float:left;
 }
 
 .skills .image {
@@ -104,7 +113,12 @@ img.image1 {
     padding: 1rem;
 }
 
-.web ul {
+.website-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.website-container ul {
 
     margin: 0;
     padding: 0;
@@ -112,14 +126,14 @@ img.image1 {
 
 }
 
-ul li {
+.website-container ul li {
     display: inline;
     margin-right: 20px;
 
 
 }
 
-.web ul li a {
+.website-container ul li a {
 
     color: #c02460;
     text-decoration: none;
